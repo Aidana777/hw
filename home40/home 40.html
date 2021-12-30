@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="/home40.css">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" name="Myform" onsubmit="return validateFrom ()" action="/index.html">
+            <h2>Rgister</h2>
+            <input type="text" placeholder="Enter your name" name="Username">
+            <input type="password" placeholder="Enter your password" name="firstPass">
+            <input type="password" placeholder="Repeat your password" name="secondPass">
+            <button id="btn" type="submit">Submit</button>
+            <div class="error-block " id="error">
+                <p>Ошибка</p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+
+        const btn = document.getElementById("btn")
+
+
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            const Username = document.Myform.Username.value;
+            const errorLog = document.getElementById("error")
+
+
+            console.log(Username, errorLog)
+            if (Username == null || Username === "") {
+                alert("Please do not do it")
+                window.location.href = "/index.html"
+            } else {
+                errorLog.style.display = "block"
+            }
+
+
+
+        })
+
+
+
+    </script>
+</body>
+
+</html>

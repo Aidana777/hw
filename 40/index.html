@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson40</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <form>
+        <!--  <label> enter your Last name </label>
+        <input type="text" value="name" name="name" placeholder="your name">
+
+        <label> enter your first name </label>
+        <input type="text" value="name" name="name" placeholder="your name">
+        <input type="submit" value="Submit">
+    
+    <label for="userPassword">Пароль:</label>
+<input id="userPassword" type="password">
+Value: <input type="text" name="value">
+<button type="submit"></button>
+<input type="checkbox" id="purple">
+<label for="purple"></label>
+
+</form>-->
+        <div class="container">
+            <form class="form" name="form">
+                <h2>Register</h2>
+                <input type="text" placeholder="enter your name" required name="name">
+                <input type="text" placeholder="enter your possword" name="firstPoss">
+                <input type="text" placeholder="repeat your possword" name="secPoss">
+            </form>
+        </div>
+        <script>
+            /*const form=document.querySelector('form');
+            
+            form.addEventListener('submit',function name(params) {
+                
+            })
+            const checkbox=document.querySelector('#purple');
+            checkbox.addEventListener('change',function() {
+                document.body.style.background=checkbox c
+            })*/
+            function validateForm() {
+                const firstPoss = document.fr.firstPoss.value;
+                const secPoss = document.fr.secPoss.value;
+                if (firstPoss == secPoss) {
+                    alert('true')
+                    window.location.href = "/index.html"
+                } else {
+                    alert("error")
+                }
+            }
+
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <div class="content">
+        <form class="second-form" name="Myform" onsubmit="return validateFrom ()" action="/index.html">
+            <h2>Rgister Second Step</h2>
+            <input type="text" placeholder=" Name" name="Username2">
+            <input type="text" placeholder="Last name" name="Last">
+            <input type="text" placeholder="Age  " name="userAge">
+            <input type="text " placeholder="City" name="userCity">
+            <div class="form-check"><input type="checkbox" id="formBasicCheckbox3" class="form-check-input"><label
+                    title="" for="formBasicCheckbox3" class="form-check-label">I agree to the terms and
+                    conditions</label></div>
+            <button id="secondbtn" type="submit">Submit</button>
+
+        </form>
+    </div>
+    <script>
+         const secondbtn = document.getElementById("secondbtn")
+        secondbtn.addEventListener("click", (e) => {
+            e.preventDefault();
+
+           
+
+            const Last = document.getElementById("Last")
+            const userAge = document.getElementById("userAge")
+            const userCity = document.getElementById("userCity")
+            const formBasicCheckbox3 = document.getElementById("formBasicCheckbox3")
+            const Username2 = document.getElementById("Username2")
+
+            console.log(Username2, Last, userAge, userCity,)
+            if(Username2,Last,userCity,userAge,formBasicCheckbox3==null||Username2,Last,userCity,userAge, formBasicCheckbox3===""){
+                alert("Please fill in the field")
+            }else{
+                alert("Error Please Check Again")
+            }
+            
+
+
+        })
+    </script>
+</body>
+
+</html>

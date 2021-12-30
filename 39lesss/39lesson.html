@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Lesson39</title>
+  <link rel="stylesheet" href="/lesson39.css" />
+</head>
+
+<body>
+  <div class="modal" id="modal">
+    <div class="moda-conten">
+      <div class="modal__header">
+        <button id="close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita numquam tempore quia consequatur commodi,
+          explicabo unde atque quos voluptatibus ipsa officia vel maxime velit, voluptates in a vitae. Aliquam, ut.</p>
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+    <script src="/lesson39.js">
+      const btn=document.createElement("button");
+      const modal=document.getElementById("modal");
+      const btnClose=document.getElementById("close");
+      btn.id="btn";
+      btn.innerText="click";
+      document.body.appendChild(btn)
+      btn.onclick= function(){
+        modal.style.display="block"
+      }
+      
+    </script>
+</body>
+
+</html>
