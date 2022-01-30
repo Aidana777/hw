@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:ital,wght@0,400;0,700;1,500;1,700&family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.card {
+  margin: 20px;
+  width: 270px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card__title {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.card__img {
+  background: url("./card_img.png") center / cover;
+  /* border-radius: 5px 5px 0 0; */
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+  height: 220px;
+}
+
+.card__content {
+  background: #4353ff;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+  height: 60px;
+  /* border-radius: 0 0 5px 5px; */
+  padding: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto;
+  align-items: center;
+  color: white;
+  column-gap: 10px;
+}
